@@ -1,7 +1,7 @@
 # TestingAirLift
 Solution Case Study Airlift
 
-MVVM, DI , Local and Insrumented Tests Repositoy Test Using Test Doubles, Databinding , caching using room , 
+MVVM, Dager-Hilt, DI, Coroutines , Local and Insrumented Tests Repositoy Test Using Test Doubles, Databinding , caching using room , 
 Shimmer , Listing of CryptoCurrencies, Material Designs,
 Navigation Component, NavArgs , Crypto currency Conversion
 
