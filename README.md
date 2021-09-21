@@ -6,7 +6,7 @@ Shimmer , Listing of CryptoCurrencies, Material Designs,
 Navigation Component, NavArgs , Crypto currency Conversion
 
 Project Breakdown, 
- - Used the Api https://nomics.com/docs/#operation/getCurrenciesTicker , APi key is already added in gradle.properties file. 
+ - Used the Api https://nomics.com/docs/#operation/getCurrenciesTicker , APi key is already added in gradle.properties file. with exipers on 25-9-21, But Don't worry visit the        link for new API key with the validity of 1 week. 
  - Setup the Local package which is Room Database and for caching, Api call then Db update then UI.  
  - Setup Remote Package and get Models and transformation of DB Entity
  - AndroidTest Cases for testing the Local db.
