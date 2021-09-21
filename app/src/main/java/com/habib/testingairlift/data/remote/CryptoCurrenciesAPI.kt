@@ -15,7 +15,7 @@ interface CryptoCurrenciesAPI {
 //        @Path(PARAM_PERIOD) period : Int,
         @Query("key") apiKey : String = BuildConfig.API_KEY,
         @Query("convert") convert : String = "USD",
-        @Query("per-page") perPage : String = "10",
+        @Query("per-page") perPage : String = "100",
         @Query("page") page : String = "1",
         @Query("interval") interval : String = "1d"
     ): Response<List<BaseModelItem>>
