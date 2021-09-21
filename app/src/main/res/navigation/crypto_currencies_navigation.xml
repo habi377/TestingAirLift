@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crypto_currencies_navigation"
+    app:startDestination="@id/cryptoCurrenciesFragment">
+
+    <fragment
+        android:id="@+id/cryptoCurrenciesFragment"
+        android:name="com.habib.testingairlift.ui.fragments.CryptoCurrenciesFragment"
+        android:label="crypto_currencies_fragment"
+        tools:layout="@layout/crypto_currencies_fragment" >
+        <action
+            android:id="@+id/action_cryptoCurrenciesFragment_to_conversionCryptoCurrenciesFragment"
+            app:destination="@id/conversionCryptoCurrenciesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/conversionCryptoCurrenciesFragment"
+        android:name="com.habib.testingairlift.ui.fragments.ConversionCryptoCurrenciesFragment"
+        android:label="fragment_conversion_crypto_currencies"
+        tools:layout="@layout/fragment_conversion_crypto_currencies" >
+
+        <argument
+            android:name="data"
+            android:defaultValue="@null"
+            app:argType="com.habib.testingairlift.data.local.models.CryptoCurrenciesDomainModel"
+            app:nullable="true"/>
+
+    </fragment>
+
+</navigation>
